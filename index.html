@@ -7,24 +7,19 @@
   <meta name="keywords" content="Dran, Web, Dranweb, Dran Web, Drake Witt, Drake, games, game, arcade, educational games, education">
   <meta name="author" content="Drake Witt">
   <!-- jQuery -->
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
   <script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
   <script type="text/javascript">
-  if (typeof jQuery != 'undefined') {
+//$(document).ready(function(){
+  //  $('#video').tubular({videoId: 'http://youtu.be/PUOun9RImC8'});
+    //$("div").fadeIn("slow");
+//});
 
-    alert("jQuery library is loaded!");
-
-}else{
-
-    alert("jQuery library is not found!");
-
-}
-
-$(document).ready(function(){
-    $('#video').tubular({videoId: 'http://youtu.be/PUOun9RImC8'});
-    console.log("Well, if you see this it works.")
+$('document').ready(function() {
+	var options = { videoId: 'e4Is32W-ppk', start: 3 };
+	$('#wrapper').tubular(options);
+	// f-UGhWj1xww cool sepia hd
+	// 49SKbS7Xwf4 beautiful barn sepia
 });
   </script>
 
@@ -48,7 +43,7 @@ $(document).ready(function(){
 <h5 class="navbar-brand logo">Logo Placeholder Hehe<h5>
     </div>
   </div>
-  <div class="content">
+  <div class="content wrapper">
     <div class="container">
       <div class="row">
         <!-- Arcade -->
